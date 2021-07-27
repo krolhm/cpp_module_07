@@ -6,11 +6,11 @@
 #    By: rbourgea <rbourgea@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/26 10:25:41 by rbourgea          #+#    #+#              #
-#    Updated: 2021/07/27 18:34:58 by rbourgea         ###   ########.fr        #
+#    Updated: 2021/07/27 18:34:52 by rbourgea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = 		whatever
+NAME = 		iter
 
 SRCS =		main.cpp
 
@@ -18,7 +18,7 @@ OBJS = 		$(SRCS:%.cpp=%.o)
 
 INC			= -I./
 
-CFLAGS =	-Wall -Wextra -Werror #-Wno-conversion
+CFLAGS =	-Wall -Wextra -Werror
 
 all:		$(NAME)
 
