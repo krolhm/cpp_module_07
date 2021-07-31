@@ -6,7 +6,7 @@
 /*   By: rbourgea <rbourgea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 18:32:16 by rbourgea          #+#    #+#             */
-/*   Updated: 2021/07/27 18:45:47 by rbourgea         ###   ########.fr       */
+/*   Updated: 2021/07/31 18:10:10 by rbourgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <iostream>
 
 template<typename T>
-void iter(T* adress, int length, void(*f)(const T element))
+void iter(T* adress, int length, void(*f)(const T &element))
 {
     for (int i = 0; i < length; i++)
         f(adress[i]);

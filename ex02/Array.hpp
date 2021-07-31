@@ -6,7 +6,7 @@
 /*   By: rbourgea <rbourgea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 10:41:22 by rbourgea          #+#    #+#             */
-/*   Updated: 2021/07/28 11:22:02 by rbourgea         ###   ########.fr       */
+/*   Updated: 2021/07/31 18:13:30 by rbourgea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,8 +80,8 @@ class Array
                 return ("Out of the limits !");
             }
         };
-        
-        unsigned int const size()
+
+        unsigned int size()
         { 
             return (_Length);
         };

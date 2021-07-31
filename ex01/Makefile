@@ -6,7 +6,7 @@
 #    By: rbourgea <rbourgea@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/07/26 10:25:41 by rbourgea          #+#    #+#              #
-#    Updated: 2021/07/27 18:34:52 by rbourgea         ###   ########.fr        #
+#    Updated: 2021/07/31 18:12:53 by rbourgea         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,11 +14,16 @@ NAME = 		iter
 
 SRCS =		main.cpp
 
-OBJS = 		$(SRCS:%.cpp=%.o)
+CC		=	clang++
 
-INC			= -I./
+OBJS	= 	$(SRCS:%.cpp=%.o)
 
-CFLAGS =	-Wall -Wextra -Werror
+INC		=	-I./
+
+CFLAGS	=	-Wall -Wextra -Werror #-Wno-conversion
+
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
 
 all:		$(NAME)
 
